@@ -1,0 +1,145 @@
+<!---->
+<!--Lutho Mboniswa-->
+<!--08 July 2021-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Huddle</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                color: aliceblue;
+                background-image: url("images/bg-desktop.svg");
+                background-repeat: no-repeat;
+                background-color: hsl(257, 40%, 49%);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            header {
+                margin-top: 2em;
+                margin-bottom: 3em;
+            }
+            #logo {
+                width: 7.5em;
+            }
+            #heading {
+                font-weight: 500;
+            }
+            #description {
+                padding-bottom: 1em;
+                font-weight: 300;
+            }
+            #register-btn {
+                background-color: beige;
+                padding: 0.7em 4em;
+                border-radius: 24px;
+                font-size: 0.8em;
+                text-decoration: none;
+                /*box-shadow: 1px 1px #011;*/
+            }
+            #register-btn:hover {
+                color: aliceblue;
+                background-color: hsl(300, 69%, 71%);
+            }
+            .footer-socials {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                padding: 0;
+            }
+            .footer-socials .socials img {
+                width: 1.8em;
+            }
+            .socials {
+                cursor: pointer;
+            }
+            /*mobile devices*/
+            @media screen and (max-width: 450px) {
+                body {
+                    background-image: url("images/bg-mobile.svg");
+                    background-repeat: no-repeat;
+                }
+            }
+            /*larger mobile devices*/
+            @media screen and (max-width: 501px) {
+                body {
+                    background-image: url("images/bg-mobile.svg");
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                }
+                /*.illustration img {
+                    width: 80%;
+                }*/
+                #devices {
+                    width: 100%;
+                }
+                main,header {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .content {
+                    text-align: center;
+                }
+                footer {
+                    margin-top: 4em;
+                }
+            }
+            @media screen and (min-width: 501.1px) {
+                main,.header {
+                    display: flex;
+                    gap: 2em;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                main > * {
+                    width: 100%;
+                }
+                .content {
+                    margin-top: 2em;
+                }
+                footer {
+                    float: right;
+                    padding-right: 68px;
+                }
+            }
+            /**/
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <img id="logo" src="images/logo.svg" alt=""/>
+        </header>
+    
+        <main>
+            <section class="illustration">
+                <img id="devices" src="images/illustration-mockups.svg" alt=""/>
+            </section>
+    
+            <section class="content">
+                <h2 id="heading">Build The Community<br/>Your Fans Will Love</h2>
+                <p id="description">
+                    Huddle re-imagines the way we build communities.
+                    You have a voice, but so does your audience. 
+                    Create connections with your users as you engage
+                    in genuine discussion.
+                </p>
+                <a id="register-btn" href="register.html" target="blank">Register</a>
+            </section>
+        </main>
+    
+        <footer>
+            <ul class="footer-socials">
+                <li class="socials"><img src="images/facebook-logo.png" alt=""/></li>&nbsp;&nbsp;
+                <li class="socials"><img src="images/twitter-outline.png" alt=""/></li>&nbsp;&nbsp;
+                <li class="socials"><img src="images/linkedin-logo.png" alt=""/></li>&nbsp;
+            </ul>
+        </footer>
+    </body>
+</html>
